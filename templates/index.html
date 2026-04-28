@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RSA App</title>
+</head>
+<body>
+
+<h2>🔐 RSA Encryption Tool</h2>
+
+<form method="POST">
+    <input type="number" name="message" placeholder="Enter number" required>
+    <button type="submit">Encrypt</button>
+</form>
+
+{% if encrypted %}
+    <p>Encrypted: {{ encrypted }}</p>
+    <p>Decrypted: {{ decrypted }}</p>
+{% endif %}
+
+</body>
+</html>
